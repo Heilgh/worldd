@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=65.5.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "world-simulation"
+version = "0.1.0"
+description = "A world simulation game with intelligent entities"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+dependencies = [
+    "pygame==2.5.2",
+    "numpy==1.24.3",
+    "noise==1.2.2",
+]
+
+[project.scripts]
+world-simulation = "src.main:main"
+
+[tool.setuptools]
+packages = ["src"] 
